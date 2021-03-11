@@ -3899,13 +3899,13 @@
     jest-diff "^25.2.1"
     pretty-format "^25.2.1"
 
-"@types/jscodeshift@^0.7.1":
-  version "0.7.1"
-  resolved "https://registry.yarnpkg.com/@types/jscodeshift/-/jscodeshift-0.7.1.tgz#8afcda6c8ca2ce828c3b192f8a1ba0245987ac12"
-  integrity sha512-4jkASx74qGl2OUK8NNFEq10QP0MXriOIqeBeNb1IdevHP8k8VDqS5Uv6nIixAA6ZUjjF6/SwOvecrjXkbcaFzw==
+"@types/jscodeshift@^0.11.0":
+  version "0.11.0"
+  resolved "https://registry.yarnpkg.com/@types/jscodeshift/-/jscodeshift-0.11.0.tgz#7224cf1a4d0383b4fb2694ffed52f57b45c3325b"
+  integrity sha512-OcJgr5GznWCEx2Oeg4eMUZYwssTHFj/tU8grrNCKdFQtAEAa0ezDiPHbCdSkyWrRSurXrYbNbHdhxbbB76pXNg==
   dependencies:
-    ast-types "0.12.1"
-    recast "0.17.2"
+    ast-types "^0.14.1"
+    recast "^0.20.3"
 
 "@types/json-schema@*":
   version "7.0.4"
@@ -5134,15 +5134,17 @@ ast-types-flow@0.0.7, ast-types-flow@^0.0.7:
   resolved "https://registry.yarnpkg.com/ast-types-flow/-/ast-types-flow-0.0.7.tgz#f70b735c6bca1a5c9c22d982c3e39e7feba3bdad"
   integrity sha1-9wtzXGvKGlycItmCw+Oef+ujva0=
 
-ast-types@0.12.1:
-  version "0.12.1"
-  resolved "https://registry.yarnpkg.com/ast-types/-/ast-types-0.12.1.tgz#55d3737a8a68e1ccde131067005ce7ee3dd42b99"
-  integrity sha512-H2izJAyT2xwew4TxShpmxe6f9R5hHgJQy1QloLiUC2yrJMtyraBWNJL7903rpeCY9keNUipORR/zIUC2XcYKng==
-
 ast-types@0.13.3:
   version "0.13.3"
   resolved "https://registry.yarnpkg.com/ast-types/-/ast-types-0.13.3.tgz#50da3f28d17bdbc7969a3a2d83a0e4a72ae755a7"
   integrity sha512-XTZ7xGML849LkQP86sWdQzfhwbt3YwIO6MqbX9mUNYY98VKaaVZP7YNNm70IpwecbkkxmfC5IYAzOQ/2p29zRA==
+
+ast-types@0.14.2, ast-types@^0.14.1:
+  version "0.14.2"
+  resolved "https://registry.yarnpkg.com/ast-types/-/ast-types-0.14.2.tgz#600b882df8583e3cd4f2df5fa20fa83759d4bdfd"
+  integrity sha512-O0yuUDnZeQDL+ncNGlJ78BiO4jnYI3bvMsD5prT0/nsgijG/LpNBIr63gTjVTNsiGkgQhiyCShTgxt8oXOrklA==
+  dependencies:
+    tslib "^2.0.1"
 
 astral-regex@^1.0.0:
   version "1.0.0"
@@ -17151,7 +17153,7 @@ prismjs@^1.17.1, prismjs@^1.20.0:
   optionalDependencies:
     clipboard "^2.0.0"
 
-private@^0.1.8, private@~0.1.5:
+private@^0.1.8:
   version "0.1.8"
   resolved "https://registry.yarnpkg.com/private/-/private-0.1.8.tgz#2381edb3689f7a53d653190060fcf822d2f368ff"
   integrity sha512-VvivMrbvd2nKkiG38qjULzlc+4Vx4wm/whI9pQD35YrARNnhxeiRktSOhSukRLFNlzg6Br/cJPet5J/u19r/mg==
@@ -17947,16 +17949,6 @@ realpath-native@^2.0.0:
   resolved "https://registry.yarnpkg.com/realpath-native/-/realpath-native-2.0.0.tgz#7377ac429b6e1fd599dc38d08ed942d0d7beb866"
   integrity sha512-v1SEYUOXXdbBZK8ZuNgO4TBjamPsiSgcFr0aP+tEKpQZK8vooEUqV6nm6Cv502mX4NF2EfsnVqtNAHG+/6Ur1Q==
 
-recast@0.17.2:
-  version "0.17.2"
-  resolved "https://registry.yarnpkg.com/recast/-/recast-0.17.2.tgz#f18f18cf20bf3fad4522621a7f9c2ada37276814"
-  integrity sha512-YHFvn4rBXl8eIjALjUiOV/AP3xFpyGNGNHDw9mAncAWuIdgnBKjbZQ9+P3VlsKcNaNapRVFlTEX1dvDRlYwyxg==
-  dependencies:
-    ast-types "0.12.1"
-    esprima "~4.0.0"
-    private "~0.1.5"
-    source-map "~0.6.1"
-
 recast@^0.18.1:
   version "0.18.10"
   resolved "https://registry.yarnpkg.com/recast/-/recast-0.18.10.tgz#605ebbe621511eb89b6356a7e224bff66ed91478"
@@ -17966,6 +17958,16 @@ recast@^0.18.1:
     esprima "~4.0.0"
     private "^0.1.8"
     source-map "~0.6.1"
+
+recast@^0.20.3:
+  version "0.20.4"
+  resolved "https://registry.yarnpkg.com/recast/-/recast-0.20.4.tgz#db55983eac70c46b3fff96c8e467d65ffb4a7abc"
+  integrity sha512-6qLIBGGRcwjrTZGIiBpJVC/NeuXpogXNyRQpqU1zWPUigCphvApoCs9KIwDYh1eDuJ6dAFlQoi/QUyE5KQ6RBQ==
+  dependencies:
+    ast-types "0.14.2"
+    esprima "~4.0.0"
+    source-map "~0.6.1"
+    tslib "^2.0.1"
 
 rechoir@^0.6.2:
   version "0.6.2"
@@ -20489,6 +20491,11 @@ tslib@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/tslib/-/tslib-2.0.0.tgz#18d13fc2dce04051e20f074cc8387fd8089ce4f3"
   integrity sha512-lTqkx847PI7xEDYJntxZH89L2/aXInsyF2luSafe/+0fHOMjlBNXdH6th7f70qxLDhul7KZK0zC8V5ZIyHl0/g==
+
+tslib@^2.0.1:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/tslib/-/tslib-2.1.0.tgz#da60860f1c2ecaa5703ab7d39bc05b6bf988b97a"
+  integrity sha512-hcVC3wYEziELGGmEEXue7D75zbwIIVUMWAVbHItGPx0ziyXxrOMQx4rQEVEV45Ut/1IotuEvwqPopzIOkDMf0A==
 
 tsutils@^3.17.1:
   version "3.17.1"

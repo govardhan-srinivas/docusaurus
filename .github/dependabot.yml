@@ -1,0 +1,31 @@
+version: 2
+updates:
+- package-ecosystem: npm
+  directory: "/"
+  schedule:
+    interval: daily
+    time: "23:30"
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: eslint
+    versions:
+    - 7.19.0
+    - 7.23.0
+  - dependency-name: y18n
+    versions:
+    - 4.0.1
+  - dependency-name: prismjs
+    versions:
+    - 1.21.0
+  - dependency-name: workbox-routing
+    versions:
+    - 6.1.0
+  - dependency-name: "@types/jscodeshift"
+    versions:
+    - 0.7.2
+  - dependency-name: unified
+    versions:
+    - 9.2.0
+  - dependency-name: handlebars
+    versions:
+    - 4.7.6
